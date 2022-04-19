@@ -1,0 +1,24 @@
+#top_div{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+#top_left{
+   width: 70%;
+
+}
+
+#top_right{
+    width: 20%;
+    flex-direction: column;
+    flex: 1;
+    
+}
+
+#products{
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-gap: 60px;
+    justify-content: space-around;
+}

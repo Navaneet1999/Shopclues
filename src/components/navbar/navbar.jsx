@@ -6,6 +6,8 @@ import LocationOnIcon from '@material-ui/icons/LocationOn';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+import { Link } from 'react-router-dom';
+
 
 export const Navbar = () => {
     return (
@@ -27,7 +29,7 @@ export const Navbar = () => {
                         id="Search"
                         placeholder="What is on your mind today?"
                     />
-                    <button>Search</button>
+                    <button id='btn'>Search</button>
                 </div>
                 <div id='nav_c'>
                     <div id='icn'><LocationOnIcon/></div>
@@ -39,17 +41,18 @@ export const Navbar = () => {
             </div>
             <div id='nav_t'>
                 <div>
-                    <img src='https://images.shopclues.com/images/ui/madeinindia.png' alt='' />
+                    <img id='navimg' src='https://images.shopclues.com/images/ui/madeinindia.png' alt='' />
                 </div>
-                <div>Mobiles & more</div>
-                <div>Men</div>
-                <div>Women</div>
-                <div>Home & Kitchen</div>
-                <div>Appliances</div>
-                <div>Sports & More</div>
-                <div>Essentials</div>
-                <div>Offers</div>
-                <div>Global Shopping</div>
+                <button  id='btn1'>Mobiles & more</button>
+                
+                <button  id='btn1'>Men</button>
+                <button  id='btn1'>Women</button>
+                <button  id='btn1'>Home & Kitchen</button>
+                <button  id='btn1'>Appliances</button>
+                <button  id='btn1'>Sports & More</button>
+                <button id='btn1'>Essentials</button>
+                <button id='btn1'>Offers</button>
+                <button id='btn1'>Global Shopping</button>
             </div>
         </div>
     )

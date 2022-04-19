@@ -56,11 +56,20 @@
       text-decoration: none;
   }
   #nav_t{
-      width: 1500px;
+      width: 1360px;
+      margin: auto;
       height: 50px;
-      background-color: #ff655f;
+      background-color: #24a3b5;
       display: flex;
   }
-  #nav_t > img{
+  #navimg{
       height: 50px;
+  }
+
+  #btn1{
+      background: transparent;
+  }
+  #btn1 :hover {
+      color: white;
+      background-color: white;
   }
