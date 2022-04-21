@@ -1,0 +1,9 @@
+.nac_prod{
+    width: 300px;
+    height: 400px;
+}
+
+.nac_prod > img{
+    width: 200px;
+    height: 250px;
+}

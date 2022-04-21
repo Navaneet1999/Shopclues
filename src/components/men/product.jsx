@@ -2,7 +2,7 @@ export const Product = ({id,imgs,ttl,catg,prc,rat,desc}) => {
     return(
         <div>
             <a href={`/products/${id}`}>
-                <img src={imgs[0]} alt=""/>
+                <img width="200px" height="250px" src={imgs} alt=""/>
                 <h3>{ttl}</h3>
                 <h2>{catg}</h2>
                 <h3>{prc}$</h3>
