@@ -1,5 +1,6 @@
 import { useEffect } from "react"
 import "./body.css"
+import {Navbar} from "../navbar/navbar"
 
 export const Body = () => {
     
@@ -8,8 +9,14 @@ export const Body = () => {
             .then(res=>res.json())
             .then(json=>console.log(json))
     }, [])
+    const gotoProd = () => {
+        return(
+            <a href="/product"></a>
+        )
+    }
     return (
         <div>
+            <Navbar/>
             <div id="topdiv">
                 <div id="top_left">
                     <img
@@ -30,7 +37,7 @@ export const Body = () => {
                 </div> */}
             </div>
             <div id="products">
-                <div id="men_prod">
+                <div id="men_prod" onClick={gotoProd()}>
                     <h2>Men's</h2>
                     <div>
                     

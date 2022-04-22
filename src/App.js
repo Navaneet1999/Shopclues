@@ -1,16 +1,20 @@
-//import logo from './logo.svg';
+
 import './App.css';
-//import { Body } from './components/body/Body';
-import { Men } from './components/men/men';
-import { Navbar } from './components/navbar/navbar';
-//import { Women } from './components/women/women';
-//import { Routes, Route} from 'react-router-dom'
+import {BrowserRouter as Router,Routes,Route} from "react-router-dom"
+import ProductPage from './components/ProductPage';
+import ProductDetails from './components/ProductDetails'
+import { Body } from './components/body/Body';
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
-      <Men/>
+      <Router>
+        <Routes>
+          <Route path='/' element={<Body/>}/>
+          <Route path='/product' element={<ProductPage/>}/>
+          <Route path='/product/:productId' element={<ProductDetails/>}/>
+        </Routes>
+      </Router>
     </div>
   );
 }
