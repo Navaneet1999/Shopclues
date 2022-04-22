@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import axios from "axios";
+import {Link} from "react-router-dom"
 import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -33,7 +34,7 @@ const ProductDetails = () => {
       ) : (
         <div className="ui placeholder segment">
           <div className="ui two column stackable center aligned grid">
-            <div className="ui vertical divider">AND</div>
+            <div className="ui vertical divider"></div>
             <div className="middle aligned row">
               <div className="column lp">
                 <img className="ui fluid image" src={image} />
@@ -49,7 +50,9 @@ const ProductDetails = () => {
                   <div className="hidden content">
                     <i className="shop icon"></i>
                   </div>
-                  <div className="visible content">Add to Cart</div>
+                  <Link to={`/cart`}>
+                  <div className="visible content"><button>Add to Cart</button></div>
+                  </Link>
                 </div>
               </div>
             </div>
