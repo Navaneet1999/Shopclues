@@ -17,12 +17,19 @@ const ProductPage = () => {
     fetchProduct()
   },[]);
   console.log("products",products)
+  const getProd = () => {
+    
+  }
   return (
+    <>
+    <h1>Products</h1>
+    <input type="text" placeholder="Search by catogory" onChange={getProd()}/>
     <div className="ui grid container">
       
-      <h1>ProductPage</h1>
+      
       <ProductComponent/>
     </div>
+    </>
   );
 };
 
