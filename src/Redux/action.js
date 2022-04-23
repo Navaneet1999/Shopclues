@@ -24,3 +24,9 @@ export const removeSelectedProduct = () => {
     type: ActionTypes.REMOVE_SELECTED_PRODUCT,
   };
 };
+export const addCartProduct = (cart) => {
+  return {
+    type: ActionTypes.ADD_CART_PRODUCT,
+    payload: cart,
+  };
+};

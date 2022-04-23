@@ -65,11 +65,10 @@
   #navimg{
       height: 50px;
   }
-
-  #btn1{
-      background: transparent;
+  #btn{
+    margin-left: 285px;
   }
-  #btn1 :hover {
+  #btn1{
+    background: transparent;
       color: white;
-      background-color: white;
   }

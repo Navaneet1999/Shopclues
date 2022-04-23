@@ -29,17 +29,21 @@ export const Navbar = () => {
                         id="Search"
                         placeholder="What is on your mind today?"
                     />
+                    <Link to={`/product`}>
                     <button id='btn'>Search</button>
+                    </Link>
                 </div>
                 <div id='nav_c'>
                     <div id='icn'><LocationOnIcon/></div>
                     <div id='icn'><NotificationsIcon/></div>
                     <div id='icn'><FavoriteIcon/></div>
                     <div id='icn'><ShoppingCartIcon/></div>
-                    <div ><a href="" id='icnaa'>Sign In</a></div>
+                    <div ><a href="/signup" id='icnaa'>Sign In</a></div>
                 </div>
             </div>
+            <Link to={`/product`}>
             <div id='nav_t'>
+                
                 <div>
                     <img id='navimg' src='https://images.shopclues.com/images/ui/madeinindia.png' alt='' />
                 </div>
@@ -53,7 +57,9 @@ export const Navbar = () => {
                 <button id='btn1'>Essentials</button>
                 <button id='btn1'>Offers</button>
                 <button id='btn1'>Global Shopping</button>
+                
             </div>
+            </Link>
         </div>
     )
 }
