@@ -116,7 +116,7 @@ body {
 .ui.cards > .card > .image {
   height: 250px;
   padding: 20px;
-  background: blue;
+  background: rgb(112, 112, 145);
   margin: auto;
 }
 .ui.cards > .card > .image > img {
