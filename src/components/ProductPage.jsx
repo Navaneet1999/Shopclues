@@ -6,6 +6,7 @@ import { setProducts } from "../Redux/action";
 
 const ProductPage = () => {
   const products = useSelector((state) => state);
+  //const item = useSelector((state) => state.allProducts.products)
   const dispatch = useDispatch()
   const fetchProduct = async() => {
     const response = await axios.get("https://fakestoreapi.com/products").catch((err)=>{
@@ -20,20 +21,25 @@ const ProductPage = () => {
   },[]);
   
   console.log("products",products)
-  const prod = products.allProducts.products.sort(function(a,b){
-    return b.price-a.price;
-  })
-  console.log("prod",prod)
+  
+
+  // const sort = (e) => {
+  //   console.log("e",e.target.value);
+  //   if(e.target.value === "null"){
+      
+  //   }
+  // }
+  //console.log("fdfg",item);
   return (
     <>
     <h1>Products</h1>
-    <div>
-      <select>
+    {/* <div>
+      <select onChange={(e)=>{sort(e)}}>
         <option value="null">Sort by price</option>
         <option value="Low to High">Low to High</option>
         <option value="High to Low">High to Low</option>
       </select>
-    </div>
+    </div> */}
     <div className="ui grid container">
       <ProductComponent/>
     </div>
