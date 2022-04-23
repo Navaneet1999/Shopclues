@@ -104,6 +104,15 @@ body {
   margin-bottom: 10px;
 }
 
+#cartbtn{
+  background-color: black;
+  color: white;
+}
+
+#cartbtn:hover{
+  background-color: #222;
+}
+
 .ui.cards > .card > .image {
   height: 250px;
   padding: 20px;

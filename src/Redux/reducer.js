@@ -2,7 +2,6 @@ import { ActionTypes } from "./actionTypes";
 
 const intialState = {
   products: [],
-  cart: [],
 };
 
 export const productsReducer = (state = intialState, { type, payload }) => {

@@ -5,10 +5,14 @@ import { useSelector } from "react-redux";
 
 const ProductComponent = () => {
   const products = useSelector((state) => state.allProducts.products);
+  const cartProducts = useSelector((state) => state.cartProduct.products);
+  console.log("csrt",cartProducts);
   const renderList = products
   .map((product) => {
     const { id, title, image, price, category } = product;
+    
     return (
+      <>
       <div className="four wide column" key={id}>
         <Link to={`/product/${id}`}>
           <div className="ui link cards">
@@ -25,9 +29,12 @@ const ProductComponent = () => {
             </div>
           </div>
         </Link>
+        <button id="cartbtn" onClick={(e)=>console.log(e.id)}>Add to Cart</button>
       </div>
+      </>
     );
   });
+  
   return <>{renderList}</>;
 };
 
