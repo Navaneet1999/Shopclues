@@ -44,20 +44,20 @@ const ProductDetails = () => {
               <div className="column rp">
                 <h1>{title}</h1>
                 <h2>
-                  <a href="" className="ui teal tag label">${price}</a>
+                  <a href="" className="ui teal tag">{price} Rs.</a>
                 </h2>
                 <h3 className="ui brown block header">{category}</h3>
                 <p>{description}</p>
-                <div className="ui vertical animated button" tabIndex="0">
+                {/* <div className="ui vertical animated button" tabIndex="0">
                   <div className="hidden content">
                     <i className="shop icon"></i>
-                  </div>
+                  </div> */}
                   <div>
                   <Link to={`/cart`}>
-                  <div className="visible content"><button>Add to Cart</button></div>
+                  <div id="buy">BUY</div>
                   </Link>
                   </div>
-                </div>
+                {/* </div> */}
               </div>
             </div>
           </div>

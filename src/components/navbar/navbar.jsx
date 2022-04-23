@@ -34,10 +34,10 @@ export const Navbar = () => {
                     </Link>
                 </div>
                 <div id='nav_c'>
-                    <div id='icn'><LocationOnIcon/></div>
-                    <div id='icn'><NotificationsIcon/></div>
-                    <div id='icn'><FavoriteIcon/></div>
-                    <div id='icn'><ShoppingCartIcon/></div>
+                    <div id='icn'><a href='/'><LocationOnIcon/></a></div>
+                    <div id='icn'><a href='/'><NotificationsIcon/></a></div>
+                    <div id='icn'><a href='/'><FavoriteIcon/></a></div>
+                    <div id='icn'><a href='/cart'><ShoppingCartIcon/></a></div>
                     <div ><a href="/signup" id='icnaa'>Sign In</a></div>
                 </div>
             </div>

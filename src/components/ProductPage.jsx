@@ -20,6 +20,10 @@ const ProductPage = () => {
   },[]);
   
   console.log("products",products)
+  const prod = products.allProducts.products.sort(function(a,b){
+    return b.price-a.price;
+  })
+  console.log("prod",prod)
   return (
     <>
     <h1>Products</h1>
