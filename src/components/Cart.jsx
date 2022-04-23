@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom"
 import { addCartProduct } from "../Redux/action";
 
+
 export const Cart = () => {
     const [cart,setCart] = useState([])
     const {prodId} = useParams();

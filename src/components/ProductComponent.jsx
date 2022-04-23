@@ -29,7 +29,7 @@ const ProductComponent = () => {
             </div>
           </div>
         </Link>
-        <button id="cartbtn" onClick={(e)=>console.log(e.id)}>Add to Cart</button>
+        <button id="cartbtn" onClick={()=>cartProducts.push(product)}>Add to Cart</button>
       </div>
       </>
     );
